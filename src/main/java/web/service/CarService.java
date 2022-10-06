@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface CarService {
 
-    List<Car> createCars();
+    void addCar(Car car);
+    List<Car> getCars();
+    List<Car> getCarsEqualTo(int count);
 
-    List<Car> getCarsEqualTo(List<Car> cars, int count);
+    void deleteCarById(int id);
 }
